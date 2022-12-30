@@ -1,66 +1,85 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Guild City
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Protótipo de Game
 
-## About Laravel
+- Laravel
+- Livewire
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+(Sem lore ainda)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Conceitos
+---------
 
-## Learning Laravel
+Jogo inicia com a criação de uma guilda em uma pequena cidade.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Objetivo do jogo no protótipo é o crescimento da guilda com a cidade.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Cidade
+Objetivo de manter e aumentar a cidade é poder ter acesso a missões maiores e desbloquear mais serviços para a guilda.
+Tudo relacionado a cidade é com relação a seus moradores (ex: melhorar fazendas para comida acompanhar crescimento de habitantes).
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Guilda
+Objetivo de manter e aumentar a guilda é poder atender a diferentes missões da cidade (ex: caçar urso atrapalhando lenhadores, ou fabricar itens especiais)
+Na guilda o jogador poderá empregar especialistas para encarregar carga de trabalhos da guilda em que o jogador não pode atuar diretamente. Adicionalmente também podem ajudar a completar missões.
 
-## Laravel Sponsors
+## Empregados
+Empregados ajudam a extrair/processar itens ou ajudam em serviços relacionados à guilda.
+Começam tendo baixa proficiência em poucas profissões
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Profissões/Expecializações
+Tanto empregados quanto o próprio jogador possuem atributos e especializações.
 
-### Premium Partners
+Atributos básicos do personagem:
+- Força
+- Agilidade
+- Condição Física (ou resistência)
+- Sorte
+- Inteligência
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Lista de Profissões e sub especializações
+- Extração
+  - Mineração
+  - Silvicultura (Extração de madeira)
+- Combate
+  - Proficiência com Espadas
+  - Proficiência com Escudos
+  - Proficiência com Arco e Flecha
+- Sobrevivência/Caça
+  - Rastreamento
+  - Armadilhas
+  - Pesca
+  - Herbologia
+- Agricultura
+  - Plantação
+  - Criação de animais
+- Diplomacia
+  - Vendedor (Mehlores custos de venda)
+  - Comprador (Mehlores custos de compra)
+  - Investigação (Detecção de problemas)
+- Produção
+  - Produtos em madeira
+  - Processamento de minérios
+  - Criação de ferramentas
+  - Criação de armas
+  - Criação de armaduras metálicas
+  - Criação de armaduras/vestimentas em tecidos/couros
+  - Cozinha
+  - Artesanato de itens diversos
+  - Joalheiro
 
-## Contributing
+Início
+------
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+#### Inicia-se com a cidade com ~100 habitantes (+viajantes?) e os seguintes serviços: 
+ - Fazendas (Produção de comidas)
+ - Lenhadores (Produção de madeira)
+ - Artesãos (Produção de roupas)
 
-## Code of Conduct
+#### Serviços da guilda iniciais:
+ - Caça de monstros
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+ - Guardas (Proteção contra monstros)
+ - Mercado (Venda de produtos)
